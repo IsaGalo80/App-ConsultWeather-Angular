@@ -1,0 +1,12 @@
+<br>
+<div *ngIf="showCiudad"   class="container">
+    <p>Ciudades</p>
+    <ul *ngFor="let ciudad of ciudades">
+        <li>{{ ciudad }}</li>
+    </ul>
+</div>
+<div class="container">
+    <button class="btn btn-primary" (click)="mostrar()" *ngIf="showCiudad">Borrar Ciudades</button>
+    <button class="btn btn-primary"  (click)="mostrar()" *ngIf="!showCiudad">Mostrar Ciudades</button>
+</div>
+<br>
